@@ -1,5 +1,6 @@
 # Sentiment-Analysis-of-Nigeria-s-Economic-News-2021-Present-
-This project focuses on performing **sentiment analysis** on news articles related to **Nigeria’s economy** from **2021 to the present**. The goal is to uncover the general sentiment and emotional tone conveyed in the media coverage over time, providing insights into how the country's economic narrative has evolved.
+This research project aims to extract and analyze articles tagged under **BDLead** from **BusinessDay Nigeria’s website**. The main goal is to perform sentiment analysis on editorial content, focusing on economic narratives in Nigeria from **2021 to present**. The project involves scraping article titles and links across **812 pages**, extracting article content, and storing the data for further sentiment and textual analysis.
+
 
 ## Project Objectives
 - Scrape news articles tagged with economic relevance from a specified data source.
