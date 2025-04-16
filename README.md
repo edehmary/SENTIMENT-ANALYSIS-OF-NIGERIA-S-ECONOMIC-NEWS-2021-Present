@@ -29,6 +29,7 @@ Sentiment Analysis – Analyze sentiment and compute polarity scores.
 |------------------|-----------------------------------------------------------|
 | `Selenium`        | Automated web browsing and dynamic page loading           |
 | `BeautifulSoup`    | Parsing and navigating HTML structure                     |
+| `python 3.10`      | Smooth integration with BeautifulSoup, Selenium, and NLTK  |
 | `requests`         | Sending HTTP requests (not actively used in current version) |
 | `pandas`           | Storing and processing tabular data                       |
 | `time`             | Adding delays between requests to avoid rate limiting     |
