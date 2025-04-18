@@ -14,14 +14,13 @@ This research project aims to extract and analyze articles tagged under **BDLead
 - Performing sentiment analysis
 
 
-
-
 ## Key Tasks
 Data Collection – Web scrape articles across all pages of the target source.
 
 Text Preprocessing – Perform tokenization, remove noise (punctuation, stop words), and apply lemmatization.
 
 Sentiment Analysis – Analyze sentiment and compute polarity scores.
+
 
 ## Tools and Libraries Used
 
@@ -36,6 +35,7 @@ Sentiment Analysis – Analyze sentiment and compute polarity scores.
 | `re`               | Regular expressions for text cleanup                      |
 | `IPython.display`  | Output handling for Jupyter                               |
 | `tqdm`             | Progress bar for loops (planned improvement)              |
+
 
 ## Process and Implementation
 **1. Setting Up Selenium and Web Driver**
@@ -71,6 +71,7 @@ Sentiment Analysis – Analyze sentiment and compute polarity scores.
 
 - DataFrame was later exported to a `.csv` file for further analysis (sentiment, NLP, etc.).
 
+
 ## Research Summary & Key Findings
 ## Sentiment Analysis Report on BusinessDay 'BDLead' Articles (2021–2024)
 **Sentiment Classification Used**
@@ -87,6 +88,7 @@ I employed the VADER SentimentIntensityAnalyzer, which is well-suited for social
 
 - **Date Range:** From 2021 to early 2024.
 
+
 ## Sentiment Analysis Summary
 
 | Sentiment | Percentage |
@@ -96,7 +98,12 @@ I employed the VADER SentimentIntensityAnalyzer, which is well-suited for social
 | Positive  | ~16%       |
 
 ### Interpretation:
-This indicates a predominantly negative sentiment tone in the BusinessDay BDLead articles, potentially reflecting economic hardship, government policy criticisms, or recurring negative news themes during the period.
+**Negative Sentiment (~46%):** Nearly half of the articles convey a negative sentiment, suggesting that the news reports are largely reflecting **unfavorable or pessimistic perspectives.** This could imply that many of the stories or viewpoints in these articles focus on challenges, problems, or unfavorable conditions affecting Nigeria's economy, businesses, or societal issues.
+
+**Neutral Sentiment (~38%):** A significant portion of the articles (over a third) fall into the neutral category. This suggests that these articles either present **factual information without strong emotional overtones** or take a balanced approach in their coverage. The neutral sentiment may reflect more objective reporting or topics where the tone doesn't convey a clear positive or negative stance.
+
+**Positive Sentiment (~16%):** A smaller proportion of the articles (about 16%) express positive sentiment, which likely reflects optimistic views or **reports about growth, progress, or favorable developments.** This suggests that while some stories highlight positive trends or achievements, they are less common compared to the negative and neutral reports.
+
 
 ## Yearly Sentiment Trends
 I grouped sentiments by year and plotted a line graph of sentiment counts per year. Key takeaways include:
@@ -110,7 +117,8 @@ I grouped sentiments by year and plotted a line graph of sentiment counts per ye
 ### Interpretation:
 There appears to be a slight improvement in sentiment from 2023 onward, suggesting potential economic recovery or better public communication.
 
-### Most Frequent Words in Positive vs. Negative Articles
+
+## Most Frequent Words in Positive vs. Negative Articles
 I applied basic text preprocessing and wordclouds for:
 
 **- Positive Articles:** Frequent words included "growth", "investment", "increase", "development".
@@ -119,6 +127,7 @@ I applied basic text preprocessing and wordclouds for:
 
 ### Interpretation:
 Negative articles focus heavily on economic instability, while positive ones emphasize progress and development plans.
+
 
 ## Challenges Encountered
 
@@ -132,5 +141,11 @@ Negative articles focus heavily on economic instability, while positive ones emp
 | Long Runtime for Full Crawl | Currently crawling is partial; batching or parallel scraping is considered for future improvements |
 
 
-# Conclusion
-My analysis reveals that BDLead articles tend to highlight negative economic news, especially in 2021–2022. However, there's a visible uptick in positive reporting in recent years, signaling cautious optimism.
+## Conclusion
+My analysis reveals that BDLead articles tend to highlight negative economic news, especially in 2021–2022. However, there's a visible uptick in positive reporting in recent years, signaling cautious optimism.The overall sentiment distribution indicates that BusinessDay's 'BDLead' articles tend to focus more on negative or neutral aspects of the Nigerian economy, with positive news being less prevalent. This could reflect a cautious or critical view of the current economic and business climate, where the challenges or issues often take precedence in the coverage.
+
+## Future Improvements
+- Temporal sentiment analysis: Observe how sentiment changes year-over-year
+- Named Entity Recognition (NER): Track companies, politicians, and keywords influencing sentiment
+- Topic modeling: Cluster articles into topics using LDA or BERTopic
+- Interactive Dashboard: Create a Streamlit or Dash app for dynamic data exploration
